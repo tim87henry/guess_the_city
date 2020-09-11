@@ -1,0 +1,36 @@
+body {
+    background: #e1b382;
+}
+
+.intro {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.question-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.question-image img {
+    margin-top: 10px;
+    width: 800px;
+    height: 500px;
+}
+
+.question-choices {
+    margin-top: 10px;
+}
+
+.question-choices input {
+    margin: 5px;
+}
+
+.question-choices label {
+    background: #12343b;
+    color:white;
+    padding: 10px;
+}
