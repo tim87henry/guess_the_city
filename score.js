@@ -2,21 +2,15 @@ const btnScore = document.querySelector('#score');
 var listOfQ=document.getElementsByClassName("question")
 var numQuestions=listOfQ.length
 
-btnScore.addEventListener('click', function (e) {
-    points=0
-    answers=[1,3,0,0,2,0,3,1]
-    
-    for (let i=0;i<numQuestions;i++) {
-        var question=document.getElementsByName("question"+(i+1))
-        if (question[answers[i]].checked) {
-            points+=1
-        }
-    }
-    alert("You scored "+points+" points")
-});
-
 var currentQ=1
 showQuestion(currentQ);
+
+btnScore.addEventListener('click', function (e) {
+    answers=[1,3,0,0,2,0,3,1]
+    q=document.getElementsByName("question"+currentQ)
+    document.getElementById(q[answers[currentQ-1]].getAttribute("value")+"ans").style.backgroundColor='green';
+});
+
 
 function navigate(num) {
     currentQ=currentQ+num;

@@ -14,7 +14,7 @@ body {
 
 .question {
     display: none;
-    margin-top: 20px;
+    margin-top: 5px;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .question-image img {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 1000px;
     height: 500px;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .question-choices input:checked + label {
-    background: #E85A4F;
+    background: rgb(228, 82, 72);
 }
 
 .question-choices label {
@@ -51,6 +51,7 @@ body {
     font-size: 18px;
     padding: 15px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .prev,.next {
